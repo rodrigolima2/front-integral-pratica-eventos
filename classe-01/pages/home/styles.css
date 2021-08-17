@@ -22,12 +22,19 @@
     flex-wrap: wrap;
 }
 .galeria__imagem{
+    cursor: pointer;
+
     display: flex;
     flex-direction: column;
 
-    cursor: pointer;
-    
+    position: relative;
+
     margin-bottom: 40px;
+}
+.imagem__like{
+    position: absolute;
+    left: 85%;
+    top: 5%;
 }
 .imagem__titulo{
     display: flex;
@@ -64,11 +71,20 @@
 
     background-color: rgba(0, 0, 0, 0.6);
 }
+.modal__like{
+    width: 50px;
+    height: 50px;
+
+    position: absolute;
+    z-index: 1;
+    left: 63%;
+    top: 30%;
+}
 .modal__img{
     width: 555px;
     height: 370px;
 
-    position: absolute;
+    position: relative;
 }
 .modal__arrow--left{
     cursor: pointer;
